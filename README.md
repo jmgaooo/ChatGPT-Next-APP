@@ -1,16 +1,34 @@
-# nextchat
+# NextChat
 
-A new Flutter project.
+一个全新的[ChatGPT-Next-Web](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)移动APP客户端
 
 ## Getting Started
+### 安装
+* **android**
 
-This project is a starting point for a Flutter application.
+    下载apk：https://github.com/jmgaooo/ChatGPT-Next-APP/releases
+* **ios**
 
-A few resources to get you started if this is your first Flutter project:
+    需自己构建安装（ios环境未测试）
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 构建
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+*在安装好flutter开发环境的机器上执行*
+
+克隆代码到本地：
+        
+    git clone https://github.com/jmgaooo/ChatGPT-Next-APP.git
+
+打包android：
+
+    flutter build apk --release
+
+打包ios（需要MacOs）：
+
+    flutter build ios --release
+
+自定义web资源：
+
+把web项目构建输出的静态资源打包成压缩包，命名为web.zip，放到项目assets/web.zip路径下。
+
+    
