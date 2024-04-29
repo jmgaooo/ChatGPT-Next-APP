@@ -13,7 +13,7 @@
 
 ### 构建
 
-*在安装好flutter开发环境的机器上执行*
+*在安装好[flutter](https://flutter.dev/)开发环境的机器上执行*
 
 克隆代码到本地：
         
@@ -29,6 +29,6 @@
 
 自定义web资源：
 
-把web项目构建输出的静态资源打包成压缩包，命名为web.zip，放到项目assets/web.zip路径下。
+把web项目构建输出的静态资源打包成压缩包，命名为`web.zip`，放到项目`assets/web.zip`路径下。
 
     
