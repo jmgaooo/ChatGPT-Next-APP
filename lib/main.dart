@@ -27,11 +27,16 @@ void main() async {
     var data = await rootBundle.load("assets/web.zip");
     final archive =
         ZipDecoder().decodeBuffer(InputStream(data.buffer.asUint8List()));
-    extractArchiveToDisk(archive, appDocDir.path);
+    await extractArchiveToDisk(archive, appDocDir.path);
   }
 
-  var handler = const Pipeline().addMiddleware(logRequests()).addHandler(
+  var pipe = const Pipeline();
+  if (kDebugMode) {
+    pipe.addMiddleware(logRequests());
+  }
+  var handler = pipe.addHandler(
       createStaticHandler(webDir.path, defaultDocument: 'index.html'));
+
   late HttpServer server;
   for (int i = 0; i < 5; i++) {
     try {
