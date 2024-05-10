@@ -2,6 +2,8 @@
 
 一个全新的[ChatGPT-Next-Web](https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web)移动APP客户端
 
+使用教程：[NextChatApp使用教程](https://aithingdoc.apifox.cn/doc-4213180)
+
 ## Getting Started
 ### 安装
 * **android**
